@@ -10,3 +10,31 @@ function fuzzyMatch(drivers, letters) {
 function matchName(drivers, str) {
   return drivers.filter((x) => x.name === str);
 }
+
+const userInfo = {
+  firstName: "Avi",
+  lastName: "Flombaum",
+  company: {
+    name: "Flatbook Labs",
+    jobTitle: "Developer Apprentice",
+  },
+  friends: [
+    {
+      firstName: "Nancy",
+      lastName: "Burgess",
+      company: {
+        name: "Flatbook Labs",
+        jobTitle: "Developer Apprentice",
+      },
+    },
+    {
+      firstName: "Corinna",
+      lastName: "Jackson",
+      company: {
+        name: "Flatbook Labs",
+        jobTitle: "Lead Developer",
+      },
+    },
+  ],
+};
+console.log(userInfo.friends[0].company.name);
